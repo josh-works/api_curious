@@ -1,6 +1,0 @@
-<% if current_user %>
-  hello, <%= current_user.name %>.
-  <%= link_to "Logout", logout_path, method: :delete %>
-<% else %>
-  <%= link_to "Sign in with Github", "https://github.com/login/oauth/authorize?client_id=016e0e4c8d3ae6f19a4e" %>
-<% end %>
